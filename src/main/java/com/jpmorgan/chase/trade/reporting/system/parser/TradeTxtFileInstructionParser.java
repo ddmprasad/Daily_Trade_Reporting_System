@@ -68,7 +68,7 @@ public class TradeTxtFileInstructionParser implements InstructionParser {
 	 * @return
 	 */
 	private TradeInstruction buildTradeInstruction(String readTradeInstruction) {
-		String [] inputTrade = readTradeInstruction.split(TradeReportConstant.PIPE_SEPERATOR);
+		String [] inputTrade = readTradeInstruction.split(TradeReportConstant.SEPERATOR);
 		if(inputTrade.length == TradeReportConstant.INCOMING_COLUMN_MAX_LENGTH) {
 			return new TradeInstruction.TradeInstructionBuilder().setEntity(inputTrade[0])
 					.setTradeinstructionType(TradeDataFormatter.getTradeInstructionType(inputTrade[1]))
