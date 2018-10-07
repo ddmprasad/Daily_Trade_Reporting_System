@@ -9,7 +9,7 @@ package com.jpmorgan.chase.trade.reporting.system.constants;
  */
 public class TradeReportConstant {
 
-	public static final String PIPE_SEPERATOR = ":";
+	public static final String SEPERATOR = ":";
 	public static final int INCOMING_COLUMN_MAX_LENGTH = 8;
 	
 	public static final String CURRENCY_AED = "AED";
